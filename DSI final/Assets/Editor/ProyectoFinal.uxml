@@ -2,10 +2,27 @@
     <Style src="project://database/Assets/Editor/ProyectoFinal.uss?fileID=7433441132597879392&amp;guid=d07f99f197fe47546af622fba2033359&amp;type=3#ProyectoFinal" />
     <ui:VisualElement name="Container" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Images/fondo.jpg?fileID=2800000&amp;guid=9119067a100742d4ebb80ed83a5f48bd&amp;type=3#fondo&apos;);">
         <ui:VisualElement name="top" style="flex-grow: 0; height: 20%; flex-direction: row;">
-            <ui:VisualElement name="team1" class="team" />
-            <ui:VisualElement name="score" style="flex-grow: 0; width: 15%; flex-direction: row;" />
-            <ui:VisualElement name="team2" class="team" style="flex-grow: 1;" />
+            <ui:VisualElement name="team1" class="team">
+                <ui:VisualElement name="player1" class="unselected" />
+                <ui:VisualElement name="player2" class="unselected" />
+                <ui:VisualElement name="player3" class="unselected" />
+                <ui:VisualElement name="player4" class="unselected" />
+                <ui:VisualElement name="player5" class="unselected" />
+            </ui:VisualElement>
+            <ui:VisualElement name="score" style="flex-grow: 0; width: 20%; flex-direction: row;">
+                <ui:Label text="3" display-tooltip-when-elided="true" name="t1Score" class="score" />
+                <ui:Label text="2" display-tooltip-when-elided="true" name="t2Score" class="score" style="background-color: rgb(164, 35, 11);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="team2" class="team">
+                <ui:VisualElement name="player2" class="unselected" />
+                <ui:VisualElement name="player3" class="unselected" />
+                <ui:VisualElement name="player4" class="unselected" />
+                <ui:VisualElement name="player5" class="unselected" />
+                <ui:VisualElement name="player1" class="unselected" />
+            </ui:VisualElement>
         </ui:VisualElement>
-        <ui:VisualElement name="bot" style="flex-grow: 1;" />
+        <ui:VisualElement name="bot" style="flex-grow: 1;">
+            <ui:VisualElement style="flex-grow: 1;" />
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
