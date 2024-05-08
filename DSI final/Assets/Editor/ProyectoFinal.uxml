@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/Editor/ProyectoFinal.uss?fileID=7433441132597879392&amp;guid=d07f99f197fe47546af622fba2033359&amp;type=3#ProyectoFinal" />
+    <ui:VisualElement name="Container" style="flex-grow: 1; background-image: url(&apos;project://database/Assets/Images/fondo.jpg?fileID=2800000&amp;guid=9119067a100742d4ebb80ed83a5f48bd&amp;type=3#fondo&apos;);">
+        <ui:VisualElement name="top" style="flex-grow: 0; height: 20%; flex-direction: row;">
+            <ui:VisualElement name="team1" class="team" />
+            <ui:VisualElement name="score" style="flex-grow: 0; width: 15%; flex-direction: row;" />
+            <ui:VisualElement name="team2" class="team" style="flex-grow: 1;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="bot" style="flex-grow: 1;" />
+    </ui:VisualElement>
+</ui:UXML>
